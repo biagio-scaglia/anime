@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime & Manga Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Anime & Manga Explorer</h1>
+    
+    <!-- Search and Filter Section -->
+    <div class="search-section">
+      <input type="text" id="search-bar" placeholder="Search for anime or manga..." />
+      <select id="type-filter">
+        <option value="anime">Anime</option>
+        <option value="manga">Manga</option>
+      </select>
+    </div>
+    <div class="theme-toggle">
+        <label for="theme-selector">Select Theme:</label>
+        <select id="theme-selector">
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+          <option value="blue">Blue Brilliant</option>
+          <option value="pink">Romantic Pink</option>
+          <option value="red">Dramatic Red</option>
+        </select>
+      </div>
+      
+    <!-- Results Section -->
+    <div id="results" class="results"></div>
+
+    <!-- Watchlist Section -->
+    <h2>My Watchlist</h2>
+    <ul id="watchlist" class="watchlist"></ul>
+    <button id="download-txt">Download Watchlist as TXT</button>
+    <button id="download-csv">Download Watchlist as CSV</button>
+    
+
+    <!-- Feedback Notification -->
+    <div id="feedback" class="feedback"></div>
+
+    <!-- Modal for Details -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button id="close-modal" class="close-modal">&times;</button>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="Image" />
+        <p id="modal-description"></p>
+        <button id="modal-add-to-watchlist">Add to Watchlist</button>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <footer class="footer">
+    <p>Developed by <a href="https://biagioscaglia.com"><span>Biagio Scaglia</span></a></p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
